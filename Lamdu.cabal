@@ -15,7 +15,8 @@ Library
   -- Modules exported by the library.
   hs-Source-Dirs:      bottlelib
 
-  Exposed-modules:     Data.Cache,
+  Exposed-modules:     Data.Aeson.TH.CompatOptions,
+                       Data.Cache,
                        Data.List.Assoc,
                        Data.List.Utils,
                        Data.Maybe.Utils,
@@ -76,6 +77,8 @@ Library
                        Data.Cache.Types
 
   Build-depends:       base >= 4,
+                       -- TODO: Verify this is the version aeson's new TH interface will eventually get:
+                       aeson >= 0.6.2 && < 0.7,
                        keyvaluehash >= 0.3.1,
                        cryptohash >= 0.7,
                        GLFW-b >= 0.1.0,
@@ -107,7 +110,8 @@ Library
 
 Executable lamdu
   Build-Depends:       base >= 4,
-                       aeson >= 0.6,
+                       -- TODO: Verify this is the version aeson's new TH interface will eventually get:
+                       aeson >= 0.6.2 && < 0.7,
                        attoparsec >= 0.10,
                        hashable,
                        containers,
