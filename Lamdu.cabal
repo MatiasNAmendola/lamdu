@@ -112,7 +112,6 @@ Executable lamdu
   Build-Depends:       base >= 4,
                        -- TODO: Verify this is the version aeson's new TH interface will eventually get:
                        aeson >= 0.6.2 && < 0.7,
-                       attoparsec >= 0.10,
                        hashable,
                        containers,
                        directory,
