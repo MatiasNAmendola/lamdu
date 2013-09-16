@@ -76,7 +76,7 @@ Library
                        Data.Cache.Types
 
   Build-depends:       base >= 4,
-                       keyvaluehash >= 0.3.1,
+                       sophia >= 0.1,
                        cryptohash >= 0.7,
                        GLFW-b >= 1.2.1 && < 1.3,
                        deepseq,
